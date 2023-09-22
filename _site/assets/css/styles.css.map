@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../_sass/main.scss"],"names":[],"mappings":"AAAA;EACI;;;AAGJ;EACE;EACA;EACA","sourcesContent":[".current {\n    color: red;\n}\n\n.post {\n  margin: 10px;\n  padding: 10px;\n  background-color: rgb(199, 199, 199);\n}"],"file":"styles.css"}
