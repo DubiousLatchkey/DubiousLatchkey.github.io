@@ -10,8 +10,32 @@
 
 
     <article class="post">
-    <h2><a href="/2023/09/21/acapella.html">Acapella</a></h2>
-    <p>Acapella was my team’s project for SB Hacks 2023.</p>
+    <h2><a href="/2023/09/21/acapella.html" class="titleLink">Acapella</a></h2>
+    <p>Acapella was my team’s project for SB Hacks 2023 where it won second place.  It is a Minecraft mod made in <a href="https://fabricmc.net/">Fabric</a> that add a command to beat the game autonomously.  It uses <a href="https://github.com/cabaletta/baritone">Baritone</a> to do pathfinding.  Check out the Devpost page <a href="https://devpost.com/software/acapella">here</a>!</p>
+
+<p>Basically it uses a stack of tasks we made and pops those tasks off in order of dependency.  Each task may generate additional subtasks and the idea is that each task is easy enough to solve using Baritone and some manually coded behaviors.  It also automatically defends itself and maintains its hunger.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ku8DImxcO4c?si=_XwjdHc4u6ftj-v9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+    </article>
+
+    <article class="post">
+    <h2><a href="/2023/09/21/NOMADS.html" class="titleLink">NOMADS</a></h2>
+    <p>NOMADS (Navy Operational Machine Auditing Development Suite) was my team’s capstone project sponsored by the US Navy’s NACWD (Navy Air Warfare Center Weapons Division).  It is a piece of software that, once installed, finds all other devices on the current network and attempts to log into them using given credentials.  It will then log all relevant device and program information to create a network topology graph.  Importantly, it is a platform for running software on each of those devices, which may include searching for known vulnerabilities or running NOMADS itself, allowing it to audit an entire airgapped network space for which it has been given authority to access.  It won third place at the UCSB CS Summit in 2021.</p>
+
+<p>Surprisingly, the hardest part wasn’t the auditing stuff, but visually displaying it.  I reverse engineered Draw.io’s xml format to programmatically generate the network graphs.  Drawing those rectangles and arrows by region took a lot of pixel math.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qaaz_d-p8wI?si=bHihsNJ0U20GJYFJ&amp;start=3552" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+    </article>
+
+    <article class="post">
+    <h2><a href="/2023/09/21/Experiments-in-Watchfaces.html" class="titleLink">Time</a></h2>
+    <p>I’ve always wanted to get a smartwatch to make unique looking watch faces.  However, in order to do anything remotely non-standard, you have to code it yourself.  I made a watchface called Time featuring the Hugo Award winning story by Randall Munroe.  You can view the final panel <a href="https://xkcd.com/1190/">here</a>, but you’ll need to look up an archive to see any of the other panels.  The panel the page led to changed every 30 minutes to an hour telling a 3000 panel story about a distant time.  In fact, figuring out what time period the comic occured in was key to understanding what it was depicting: the refilling of the Mediterranean after it dries up.</p>
+
+<p>I took every image from the story and pngcrushed them down to as small as possible and tell the story on my watch every day with each frame given a 28 second window where it is the background image on the watchface.  It had been a while since I did Android development (read 6 years) so I had to relearn everything, this time in Kotlin.</p>
+
+<p><img src="/assets/images/time.jpg" alt="Time in action" /></p>
 
     </article>
 
