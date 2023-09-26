@@ -5,16 +5,29 @@
 .post {
   margin: 10px;
   padding: 10px;
-  background-color: rgb(199, 199, 199);
+  background-color: #0077B6;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #CAF0F8;
+  border-radius: 25px;
+  width: 70%;
 }
 
 .titleLink {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #CAF0F8;
+}
+
+.title {
+  color: #CAF0F8;
+  text-align: center;
 }
 
 a:hover {
-  color: rgb(89, 60, 255);
+  color: #a8d6e0;
+}
+
+body {
+  background-color: #03045E;
 }
 
 /*# sourceMappingURL=styles.css.map */
