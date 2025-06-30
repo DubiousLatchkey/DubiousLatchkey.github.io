@@ -1,3 +1,6 @@
 [submodule "spindafy"]
 	path = spindafy
 	url = https://github.com/DubiousLatchkey/spindafy
+[submodule "swshRaidMap"]
+	path = swshRaidMap
+	url = https://github.com/DubiousLatchkey/swshRaidMap
