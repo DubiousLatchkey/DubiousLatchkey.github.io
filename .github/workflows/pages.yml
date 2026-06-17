@@ -35,6 +35,11 @@ jobs:
       - name: Build with Jekyll
         run: bundle exec jekyll build
 
+      - name: Copy standalone project sites
+        run: |
+          rsync -a --exclude='.git' --exclude='.gitignore' spindafy/ _site/spindafy/
+          rsync -a --exclude='.git' --exclude='.gitignore' swshRaidMap/ _site/swshRaidMap/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
