@@ -1,0 +1,89 @@
+theme: jekyll-theme-chirpy
+
+lang: en
+timezone: America/Los_Angeles
+
+title: Matthew Chen
+tagline: Projects and daily notes
+description: Portfolio projects and daily notes from Matthew Chen.
+url: "https://dubiouslatchkey.github.io"
+baseurl: ""
+
+github:
+  username: DubiousLatchkey
+
+social:
+  name: Matthew Chen
+  links:
+    - https://github.com/DubiousLatchkey
+
+theme_mode: dark
+avatar: /assets/img/avatar.png
+toc: true
+comments:
+  provider:
+
+paginate: 10
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+kramdown:
+  footnote_backlink: "&#8617;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+sass:
+  style: compressed
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
+exclude:
+  - .bundle
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - node_modules
+  - spindafy
+  - swshRaidMap
+  - vendor

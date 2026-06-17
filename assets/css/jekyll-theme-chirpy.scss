@@ -1,0 +1,115 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+html[data-mode='dark'] {
+  --main-bg: #0b1220;
+  --mask-bg: #111827;
+  --main-border-color: rgb(148 163 184 / 18%);
+  --text-color: #dbe7f3;
+  --text-muted-color: #91a4ba;
+  --text-muted-highlight-color: #b8c7d9;
+  --heading-color: #eef5fb;
+  --label-color: #b8c7d9;
+  --blockquote-border-color: rgb(125 157 196 / 30%);
+  --blockquote-text-color: #a7b8ca;
+  --link-color: #8eb8e5;
+  --link-underline-color: rgb(142 184 229 / 35%);
+  --button-bg: #121c2e;
+  --btn-border-color: rgb(148 163 184 / 20%);
+  --card-bg: #172033;
+  --card-header-bg: #131c2d;
+  --card-hover-bg: #20304a;
+  --card-shadow: rgb(2 8 23 / 35%) 0 10px 24px 0, rgb(148 163 184 / 12%) 0 0 0 1px;
+  --sidebar-bg: #09111f;
+  --sidebar-border-color: rgb(148 163 184 / 16%);
+  --sidebar-active-color: #dbe7f3;
+  --sidebar-hover-bg: #172033;
+  --sidebar-muted-color: #91a4ba;
+  --sidebar-btn-bg: #111b2c;
+  --sidebar-btn-color: #91a4ba;
+  --site-title-color: #eef5fb;
+  --site-subtitle-color: #9fb3c8;
+  --topbar-bg: rgb(11 18 32 / 78%);
+  --topbar-text-color: #dbe7f3;
+  --search-border-color: rgb(148 163 184 / 18%);
+  --search-icon-color: #7890aa;
+  --input-focus-border-color: #6f9cc9;
+  --menu-bg: #172033;
+  --menu-border-color: rgb(148 163 184 / 18%);
+  --menu-active-color: #dbe7f3;
+  --toc-highlight: #9cc9f5;
+  --tag-border: rgb(142 184 229 / 28%);
+  --tag-shadow: rgb(2 8 23 / 35%);
+  --tag-hover: #20304a;
+  --search-tag-bg: #172033;
+  --categories-border: rgb(148 163 184 / 16%);
+  --categories-hover-bg: #20304a;
+  --timeline-node-bg: #6f8094;
+  --timeline-color: rgb(148 163 184 / 20%);
+  --highlight-bg-color: #08111f;
+  --inline-code-bg: rgb(142 184 229 / 10%);
+  --code-color: #c4d4e5;
+}
+
+a:hover {
+  color: #b7d5f4;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.project-card {
+  padding: 1.25rem;
+  border: 1px solid var(--main-border-color);
+  border-radius: 1rem;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+}
+
+.project-card h2 {
+  margin-top: 0;
+}
+
+.project-excerpt {
+  color: var(--text-color);
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.project-hero {
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--main-border-color);
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #172033, #0b1220);
+}
+
+.project-kicker {
+  margin: 0 0 0.25rem;
+  color: #9cc9f5;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project-hero h1 {
+  margin: 0;
+}
+
+.project-body {
+  color: var(--text-color);
+}
