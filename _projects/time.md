@@ -1,4 +1,10 @@
 ---
+description: A Kotlin smartwatch face that plays the 3,000-panel story of Randall Munroe's Time across each day.
+image:
+  path: /assets/images/social/time.jpg
+  width: 1200
+  height: 630
+  alt: Screenshot of the time project page
 layout: project
 title: Time
 ---

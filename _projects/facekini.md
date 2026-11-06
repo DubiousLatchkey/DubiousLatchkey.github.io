@@ -1,4 +1,10 @@
 ---
+description: A webcam-driven VTuber tool that turns layered PSD artwork into animated faces. Winner of an internal ByteDance hackathon.
+image:
+  path: /assets/images/social/facekini.jpg
+  width: 1200
+  height: 630
+  alt: Screenshot of the facekini project page
 layout: project
 title: Facekini
 ---

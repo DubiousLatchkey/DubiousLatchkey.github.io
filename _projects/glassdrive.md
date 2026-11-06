@@ -1,4 +1,10 @@
 ---
+description: A Raspberry Pi Zero wireless NAS with a web interface for file transfers. A winning HakD hackathon project.
+image:
+  path: /assets/images/social/glassdrive.jpg
+  width: 1200
+  height: 630
+  alt: Screenshot of the glassdrive project page
 layout: project
 title: GlassDrive
 ---

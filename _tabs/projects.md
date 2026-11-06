@@ -1,4 +1,10 @@
 ---
+description: Software projects by Matthew Chen, including hackathon winners, network auditing, Minecraft automation, and creative experiments.
+image:
+  path: /assets/images/social/portfolio.jpg
+  width: 1200
+  height: 630
+  alt: Screenshot of Matthew Chen's project portfolio
 title: Projects
 icon: fas fa-code
 order: 1

@@ -1,4 +1,10 @@
 ---
+description: Rendering DOOM live as a mosaic of Pokemon Spinda patterns using direct pixel correlation.
+image:
+  path: /assets/images/social/doom-via-spindas.jpg
+  width: 1200
+  height: 630
+  alt: Screenshot of the doom-via-spindas project page
 title: Doom Via Spindas
 layout: project
 ---

@@ -19,6 +19,7 @@ social:
 
 theme_mode: dark
 avatar: /assets/img/avatar.png
+social_preview_image: /assets/images/social/portfolio.jpg
 toc: true
 comments:
   provider:
@@ -83,6 +84,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - AGENTS.md
   - node_modules
   - spindafy
   - swshRaidMap

@@ -1,4 +1,10 @@
 ---
+description: A Navy-sponsored UCSB capstone for authorized network auditing and topology visualization. Third place at the 2021 UCSB CS Summit.
+image:
+  path: /assets/images/social/nomads.jpg
+  width: 1200
+  height: 630
+  alt: Screenshot of the nomads project page
 title: NOMADS
 layout: project
 ---

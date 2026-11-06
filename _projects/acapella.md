@@ -1,4 +1,10 @@
 ---
+description: An autonomous Minecraft mod using task planning and Baritone pathfinding. Second place at SB Hacks 2023.
+image:
+  path: /assets/images/social/acapella.jpg
+  width: 1200
+  height: 630
+  alt: Screenshot of the acapella project page
 title: Acapella
 layout: project
 ---

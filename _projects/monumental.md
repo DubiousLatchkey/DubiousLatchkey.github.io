@@ -1,4 +1,10 @@
 ---
+description: A Firebase-powered geocaching app with a map interface, built at SB Hacks 2020.
+image:
+  path: /assets/images/social/monumental.jpg
+  width: 1200
+  height: 630
+  alt: Screenshot of the monumental project page
 layout: project
 title: Monumental
 ---
