@@ -20,8 +20,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -34,11 +32,6 @@ jobs:
 
       - name: Build with Jekyll
         run: bundle exec jekyll build
-
-      - name: Copy standalone project sites
-        run: |
-          rsync -a --exclude='.git' --exclude='.gitignore' spindafy/ _site/spindafy/
-          rsync -a --exclude='.git' --exclude='.gitignore' swshRaidMap/ _site/swshRaidMap/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
