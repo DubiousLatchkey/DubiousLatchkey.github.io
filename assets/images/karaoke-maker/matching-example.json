@@ -1,0 +1,141 @@
+[
+  {
+    "kind": "match",
+    "shape": "1:1",
+    "asr_range": [
+      0,
+      1
+    ],
+    "lyric_range": [
+      0,
+      1
+    ],
+    "asr_tokens": [
+      "we"
+    ],
+    "lyric_tokens": [
+      "we"
+    ],
+    "cost": 0.0,
+    "text_cost": 0.0,
+    "phoneme_cost": null,
+    "confidence": 1.0,
+    "pronunciation_sources": []
+  },
+  {
+    "kind": "match",
+    "shape": "2:1",
+    "asr_range": [
+      1,
+      3
+    ],
+    "lyric_range": [
+      1,
+      2
+    ],
+    "asr_tokens": [
+      "can",
+      "not"
+    ],
+    "lyric_tokens": [
+      "cannot"
+    ],
+    "cost": 0.13,
+    "text_cost": 0.05,
+    "phoneme_cost": null,
+    "confidence": 0.87,
+    "pronunciation_sources": []
+  },
+  {
+    "kind": "match",
+    "shape": "1:1",
+    "asr_range": [
+      3,
+      4
+    ],
+    "lyric_range": [
+      2,
+      3
+    ],
+    "asr_tokens": [
+      "stop"
+    ],
+    "lyric_tokens": [
+      "stop"
+    ],
+    "cost": 0.0,
+    "text_cost": 0.0,
+    "phoneme_cost": null,
+    "confidence": 1.0,
+    "pronunciation_sources": []
+  },
+  {
+    "kind": "skip_asr",
+    "shape": "1:0",
+    "asr_range": [
+      4,
+      5
+    ],
+    "lyric_range": [
+      3,
+      3
+    ],
+    "asr_tokens": [
+      "oh"
+    ],
+    "lyric_tokens": [],
+    "cost": 0.08,
+    "text_cost": null,
+    "phoneme_cost": null,
+    "confidence": 0.0,
+    "pronunciation_sources": []
+  },
+  {
+    "kind": "match",
+    "shape": "2:2",
+    "asr_range": [
+      5,
+      7
+    ],
+    "lyric_range": [
+      3,
+      5
+    ],
+    "asr_tokens": [
+      "an",
+      "ice"
+    ],
+    "lyric_tokens": [
+      "a",
+      "nice"
+    ],
+    "cost": 0.16,
+    "text_cost": 0.0,
+    "phoneme_cost": null,
+    "confidence": 0.84,
+    "pronunciation_sources": []
+  },
+  {
+    "kind": "match",
+    "shape": "1:1",
+    "asr_range": [
+      7,
+      8
+    ],
+    "lyric_range": [
+      5,
+      6
+    ],
+    "asr_tokens": [
+      "day"
+    ],
+    "lyric_tokens": [
+      "day"
+    ],
+    "cost": 0.0,
+    "text_cost": 0.0,
+    "phoneme_cost": null,
+    "confidence": 1.0,
+    "pronunciation_sources": []
+  }
+]

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="576pt" viewBox="0 0 1008 576" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-05T16:34:11.009211</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.3, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 576 
+L 1008 576 
+L 1008 0 
+L 0 0 
+z
+" style="fill: #101722"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 66.21552 243.3888 
+L 294.95088 243.3888 
+Q 311.8248 243.3888 311.8248 235.19808 
+L 311.8248 115.06752 
+Q 311.8248 106.8768 294.95088 106.8768 
+L 66.21552 106.8768 
+Q 49.3416 106.8768 49.3416 115.06752 
+L 49.3416 235.19808 
+Q 49.3416 243.3888 66.21552 243.3888 
+z
+" clip-path="url(#p0e5c15c327)" style="fill: #1b2738; stroke: #65ddc6; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 384.94512 243.3888 
+L 613.68048 243.3888 
+Q 630.5544 243.3888 630.5544 235.19808 
+L 630.5544 115.06752 
+Q 630.5544 106.8768 613.68048 106.8768 
+L 384.94512 106.8768 
+Q 368.0712 106.8768 368.0712 115.06752 
+L 368.0712 235.19808 
+Q 368.0712 243.3888 384.94512 243.3888 
+z
+" clip-path="url(#p0e5c15c327)" style="fill: #1b2738; stroke: #92baff; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 703.67472 243.3888 
+L 941.78448 243.3888 
+Q 958.6584 243.3888 958.6584 235.19808 
+L 958.6584 115.06752 
+Q 958.6584 106.8768 941.78448 106.8768 
+L 703.67472 106.8768 
+Q 686.8008 106.8768 686.8008 115.06752 
+L 686.8008 235.19808 
+Q 686.8008 243.3888 703.67472 243.3888 
+z
+" clip-path="url(#p0e5c15c327)" style="fill: #1b2738; stroke: #ffd06a; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 703.67472 416.304 
+L 941.78448 416.304 
+Q 958.6584 416.304 958.6584 408.11328 
+L 958.6584 287.98272 
+Q 958.6584 279.792 941.78448 279.792 
+L 703.67472 279.792 
+Q 686.8008 279.792 686.8008 287.98272 
+L 686.8008 408.11328 
+Q 686.8008 416.304 703.67472 416.304 
+z
+" clip-path="url(#p0e5c15c327)" style="fill: #1b2738; stroke: #ffd06a; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 384.94512 416.304 
+L 613.68048 416.304 
+Q 630.5544 416.304 630.5544 408.11328 
+L 630.5544 287.98272 
+Q 630.5544 279.792 613.68048 279.792 
+L 384.94512 279.792 
+Q 368.0712 279.792 368.0712 287.98272 
+L 368.0712 408.11328 
+Q 368.0712 416.304 384.94512 416.304 
+z
+" clip-path="url(#p0e5c15c327)" style="fill: #1b2738; stroke: #92baff; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 66.21552 416.304 
+L 294.95088 416.304 
+Q 311.8248 416.304 311.8248 408.11328 
+L 311.8248 287.98272 
+Q 311.8248 279.792 294.95088 279.792 
+L 66.21552 279.792 
+Q 49.3416 279.792 49.3416 287.98272 
+L 49.3416 408.11328 
+Q 49.3416 416.304 66.21552 416.304 
+z
+" clip-path="url(#p0e5c15c327)" style="fill: #1b2738; stroke: #65ddc6; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #65ddc6" x="72.7776" y="137.991412" transform="rotate(-0 72.7776 137.991412)">01  Vocal audio</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(72.7776 167.564681)">Mono, resampled to 16 kHz</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(72.7776 183.225587)">Approximate lyric-line window</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(72.7776 198.886494)">Up to 0.5 s context on each side</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #92baff" x="391.5072" y="137.991412" transform="rotate(-0 391.5072 137.991412)">02  Acoustic features</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(391.5072 167.564681)">7 convolutional layers</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(391.5072 183.225587)">512 channels per layer</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(391.5072 198.886494)">Feature projection: 512 → 768</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #ffd06a" x="710.2368" y="137.991412" transform="rotate(-0 710.2368 137.991412)">03  Transformer × 12</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(710.2368 167.564681)">Hidden size 768 · 12 heads</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(710.2368 183.225587)">Frozen base weights</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(710.2368 198.886494)">Trainable LoRA on Q and V</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 309.136183 177.408 
+Q 339.947369 177.408 368.857898 177.408 
+" style="fill: none; stroke: #afbed0; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 364.057898 175.008 
+L 368.857898 177.408 
+L 364.057898 179.808 
+z
+" style="fill: #afbed0; stroke: #afbed0; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 627.865783 177.408 
+Q 658.676969 177.408 687.587498 177.408 
+" style="fill: none; stroke: #afbed0; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 682.787498 175.008 
+L 687.587498 177.408 
+L 682.787498 179.808 
+z
+" style="fill: #afbed0; stroke: #afbed0; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 822.7296 243.118287 
+Q 822.7296 261.59192 822.7296 278.164895 
+" style="fill: none; stroke: #afbed0; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 825.1296 273.364895 
+L 822.7296 278.164895 
+L 820.3296 273.364895 
+z
+" style="fill: #afbed0; stroke: #afbed0; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #ffd06a" x="710.2368" y="310.906612" transform="rotate(-0 710.2368 310.906612)">04  CTC output head</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(710.2368 340.479881)">Trainable linear head: 768 → 32</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(710.2368 356.140787)">Characters + separator + blank</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(710.2368 371.801694)">Framewise log probabilities</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #92baff" x="391.5072" y="310.906612" transform="rotate(-0 391.5072 310.906612)">05  Constrained path</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(391.5072 340.479881)">Known lyric characters</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(391.5072 356.140787)">CTC Viterbi dynamic program</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(391.5072 371.801694)">Character spans → word spans</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #65ddc6" x="72.7776" y="310.906612" transform="rotate(-0 72.7776 310.906612)">06  Singing projection</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(72.7776 340.479881)">Keep CTC word starts</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(72.7776 356.140787)">Extend ends through vocal energy</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #eef3fa" transform="translate(72.7776 371.801694)">Stop at quiet run / next word</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 689.489417 350.3232 
+Q 658.678231 350.3232 629.767702 350.3232 
+" style="fill: none; stroke: #afbed0; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 634.567702 352.7232 
+L 629.767702 350.3232 
+L 634.567702 347.9232 
+z
+" style="fill: #afbed0; stroke: #afbed0; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 370.759817 350.3232 
+Q 339.948631 350.3232 311.038102 350.3232 
+" style="fill: none; stroke: #afbed0; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 315.838102 352.7232 
+L 311.038102 350.3232 
+L 315.838102 347.9232 
+z
+" style="fill: #afbed0; stroke: #afbed0; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #ffd06a" x="63.4032" y="473.184" transform="rotate(-0 63.4032 473.184)">LoRA: ΔW = (16 / 8) BA</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #eef3fa" x="63.4032" y="514.1376" transform="rotate(-0 63.4032 514.1376)">Rank 8 · dropout 0.05 · 319,520 trainable parameters / 94,715,840 total (0.34%)</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #ffd06a" x="963.3456" y="514.1376" transform="rotate(-0 963.3456 514.1376)">Gold = trained components</text>
+   </g>
+  </g>
+  <g id="text_16">
+   <text style="font-weight: 700; font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #eef3fa" x="45.36" y="34.56" transform="rotate(-0 45.36 34.56)">A speech model adapted to singing</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #afbed0" x="45.36" y="60.48" transform="rotate(-0 45.36 60.48)">Production release: singing_r8 · wav2vec2-base-960h + LoRA + CTC forced alignment</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0e5c15c327">
+   <rect x="35.28" y="86.4" width="937.44" height="455.04"/>
+  </clipPath>
+ </defs>
+</svg>
