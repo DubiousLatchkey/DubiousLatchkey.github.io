@@ -56,8 +56,8 @@ On a separate frozen set of five manually timed local projects, the rank-8 model
 
 ## Word Projection Changes: Singing Energy
 
-![Illustrative vocal-energy trace showing a CTC lexical endpoint extended through sustained energy until two consecutive quiet frames, bounded by the next word.](/assets/images/karaoke-maker/singing-energy.png)
-_A synthetic trace illustrating the implemented rule. The shaded region is the sustained sound retained after the lexical CTC endpoint._
+![Measured vocal energy for the line-final word take in Not Much to Miss, comparing the shorter standard CTC projection with the longer singing-energy projection.](/assets/images/karaoke-maker/singing-energy.png)
+_Line-final “take” at 0:39.224 in “Not Much to Miss,” measured from the separated vocal stem using the same rank-8 model output for both projections. Standard CTC ends at 0:40.886 (1.662 seconds); the singing projection follows the remaining vocal energy to 0:41.187 (1.963 seconds), an extension of about 300 ms. The longer endpoint agrees with the saved editor timing._
 
 [View the full-size singing-energy breakdown](/assets/images/karaoke-maker/singing-energy.png).
 

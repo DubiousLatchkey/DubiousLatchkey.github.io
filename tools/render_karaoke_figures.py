@@ -1,7 +1,7 @@
 """Render source-based portfolio figures. Requires matplotlib, numpy, rapidfuzz.
 
 Run using the karaoke-maker venv; --source points at that repository.
-The energy trace is explicitly synthetic; matcher operations use the real code.
+The energy renderer uses a recorded production trace; matcher operations use the real code.
 """
 import argparse
 import json
@@ -66,34 +66,9 @@ ax.text(3,6,'Rank 8 · dropout 0.05 · 319,520 trainable parameters / 94,715,840
 ax.text(99,6,'Gold = trained components',ha='right',color=GOLD,fontsize=11)
 save(fig,'ctc-architecture')
 
-fig, ax = base('Let a sung vowel finish', 'Singing-energy projection · illustrative synthetic trace, not a measured song segment')
-plot = fig.add_axes([.09,.39,.84,.39],facecolor=BG)
-t=np.arange(0,1.6,.02)
-energy=np.where((t>=.18)&(t<.94),.38+.06*np.sin(t*25),.025+.005*np.cos(t*17))
-energy=np.where((t>=1.22)&(t<1.5),.32+.03*np.sin(t*23),energy)
-low,high=np.quantile(energy,[.15,.85]); threshold=low+.2*max(0,high-low)
-lexical_end=.50; next_start=1.22
-quiet=None
-for i in range(int(lexical_end/.02)+1,int(next_start/.02)-1):
-    if energy[i]<=threshold and energy[i+1]<=threshold: quiet=i;break
-assert quiet is not None
-new_end=t[quiet-1]
-plot.fill_between(t,energy,color=TEAL,alpha=.15);plot.plot(t,energy,color=TEAL,lw=2,label='RMS per acoustic frame')
-plot.axhline(threshold,color=GOLD,ls='--',label='Adaptive quiet threshold')
-plot.axvspan(lexical_end,new_end,color=GOLD,alpha=.16)
-for x,label,col in [(lexical_end,'CTC lexical end',BLUE),(new_end,'Extended word end',GOLD),(next_start,'Next word start',MUTED)]:
-    plot.axvline(x,color=col,ls=':');plot.text(x+.018,.51,label,rotation=90,va='top',fontsize=10,color=col)
-plot.scatter(t[quiet:quiet+2],energy[quiet:quiet+2],color=GOLD,zorder=5)
-plot.set_ylim(0,.55);plot.set_xlim(0,1.6);plot.set_xlabel('Time within the example line (seconds)');plot.set_ylabel('Frame RMS');plot.spines[['top','right']].set_visible(False)
-plot.legend(loc='upper left',fontsize=9,facecolor=PANEL,labelcolor=FG,framealpha=.9)
-ax.text(3,29,'1. Measure energy',color=TEAL,weight='bold',fontsize=14)
-ax.text(3,21,'RMS = √mean(x²) in a window\ncentered on each acoustic frame.',fontsize=11,linespacing=1.5)
-ax.text(36,29,'2. Adapt to the line',color=GOLD,weight='bold',fontsize=14)
-ax.text(36,21,'q15 + 0.20 × (q85 − q15)\nsets the quiet threshold.',fontsize=11,linespacing=1.5)
-ax.text(70,29,'3. Extend conservatively',color=BLUE,weight='bold',fontsize=14)
-ax.text(70,21,'Stop before 2 quiet frames,\nwithout crossing the next word.',fontsize=11,linespacing=1.5)
-ax.text(3,5,'No quiet run? Extend to the next word boundary; for the final word, keep the original end.',fontsize=11,color=MUTED)
-save(fig,'singing-energy')
+# Render the measured production trace instead of the old synthetic example.
+import subprocess
+subprocess.run([sys.executable, str(Path(__file__).with_name('render_singing_energy.py'))], check=True)
 
 asr=['we','can','not','stop','oh','an','ice','day']; lyrics=['we','cannot','stop','a','nice','day']
 ops=GeneralizedMatcher().align(asr,lyrics)
