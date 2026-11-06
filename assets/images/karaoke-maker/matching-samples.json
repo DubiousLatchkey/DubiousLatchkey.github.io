@@ -1,0 +1,347 @@
+[
+  {
+    "file": "matching-first-chorus.png",
+    "start": 65.406,
+    "end": 69.855,
+    "operation_indices": [
+      103,
+      109
+    ],
+    "operations": [
+      {
+        "kind": "match",
+        "shape": "1:1",
+        "asr_range": [
+          103,
+          104
+        ],
+        "lyric_range": [
+          103,
+          104
+        ],
+        "asr_tokens": [
+          "me"
+        ],
+        "lyric_tokens": [
+          "me"
+        ],
+        "cost": 0.0,
+        "text_cost": 0.0,
+        "phoneme_cost": null,
+        "confidence": 1.0,
+        "pronunciation_sources": []
+      },
+      {
+        "kind": "match",
+        "shape": "1:1",
+        "asr_range": [
+          104,
+          105
+        ],
+        "lyric_range": [
+          104,
+          105
+        ],
+        "asr_tokens": [
+          "enough"
+        ],
+        "lyric_tokens": [
+          "enough"
+        ],
+        "cost": 0.0,
+        "text_cost": 0.0,
+        "phoneme_cost": null,
+        "confidence": 1.0,
+        "pronunciation_sources": []
+      },
+      {
+        "kind": "match",
+        "shape": "1:2",
+        "asr_range": [
+          105,
+          106
+        ],
+        "lyric_range": [
+          105,
+          107
+        ],
+        "asr_tokens": [
+          "yes,"
+        ],
+        "lyric_tokens": [
+          "i",
+          "guess"
+        ],
+        "cost": 0.7942857142857143,
+        "text_cost": 0.7142857142857143,
+        "phoneme_cost": null,
+        "confidence": 0.20571428571428574,
+        "pronunciation_sources": []
+      },
+      {
+        "kind": "match",
+        "shape": "1:1",
+        "asr_range": [
+          106,
+          107
+        ],
+        "lyric_range": [
+          107,
+          108
+        ],
+        "asr_tokens": [
+          "i'm"
+        ],
+        "lyric_tokens": [
+          "i'm"
+        ],
+        "cost": 0.0,
+        "text_cost": 0.0,
+        "phoneme_cost": null,
+        "confidence": 1.0,
+        "pronunciation_sources": []
+      },
+      {
+        "kind": "match",
+        "shape": "1:1",
+        "asr_range": [
+          107,
+          108
+        ],
+        "lyric_range": [
+          108,
+          109
+        ],
+        "asr_tokens": [
+          "not"
+        ],
+        "lyric_tokens": [
+          "not"
+        ],
+        "cost": 0.0,
+        "text_cost": 0.0,
+        "phoneme_cost": null,
+        "confidence": 1.0,
+        "pronunciation_sources": []
+      },
+      {
+        "kind": "match",
+        "shape": "1:1",
+        "asr_range": [
+          108,
+          109
+        ],
+        "lyric_range": [
+          109,
+          110
+        ],
+        "asr_tokens": [
+          "much"
+        ],
+        "lyric_tokens": [
+          "much"
+        ],
+        "cost": 0.0,
+        "text_cost": 0.0,
+        "phoneme_cost": null,
+        "confidence": 1.0,
+        "pronunciation_sources": []
+      }
+    ]
+  },
+  {
+    "file": "matching-final-chorus.png",
+    "start": 187.742,
+    "end": 193.436,
+    "operation_indices": [
+      291,
+      299
+    ],
+    "operations": [
+      {
+        "kind": "match",
+        "shape": "1:1",
+        "asr_range": [
+          289,
+          290
+        ],
+        "lyric_range": [
+          291,
+          292
+        ],
+        "asr_tokens": [
+          "didn't"
+        ],
+        "lyric_tokens": [
+          "didn't"
+        ],
+        "cost": 0.0,
+        "text_cost": 0.0,
+        "phoneme_cost": null,
+        "confidence": 1.0,
+        "pronunciation_sources": []
+      },
+      {
+        "kind": "match",
+        "shape": "1:1",
+        "asr_range": [
+          290,
+          291
+        ],
+        "lyric_range": [
+          292,
+          293
+        ],
+        "asr_tokens": [
+          "miss"
+        ],
+        "lyric_tokens": [
+          "miss"
+        ],
+        "cost": 0.0,
+        "text_cost": 0.0,
+        "phoneme_cost": null,
+        "confidence": 1.0,
+        "pronunciation_sources": []
+      },
+      {
+        "kind": "match",
+        "shape": "1:1",
+        "asr_range": [
+          291,
+          292
+        ],
+        "lyric_range": [
+          293,
+          294
+        ],
+        "asr_tokens": [
+          "me"
+        ],
+        "lyric_tokens": [
+          "me"
+        ],
+        "cost": 0.0,
+        "text_cost": 0.0,
+        "phoneme_cost": null,
+        "confidence": 1.0,
+        "pronunciation_sources": []
+      },
+      {
+        "kind": "match",
+        "shape": "2:2",
+        "asr_range": [
+          292,
+          294
+        ],
+        "lyric_range": [
+          294,
+          296
+        ],
+        "asr_tokens": [
+          "now",
+          "yes,"
+        ],
+        "lyric_tokens": [
+          "enough",
+          "i"
+        ],
+        "cost": 0.8742857142857143,
+        "text_cost": 0.7142857142857143,
+        "phoneme_cost": null,
+        "confidence": 0.12571428571428567,
+        "pronunciation_sources": []
+      },
+      {
+        "kind": "skip_lyric",
+        "shape": "0:1",
+        "asr_range": [
+          294,
+          294
+        ],
+        "lyric_range": [
+          296,
+          297
+        ],
+        "asr_tokens": [],
+        "lyric_tokens": [
+          "guess"
+        ],
+        "cost": 0.4,
+        "text_cost": null,
+        "phoneme_cost": null,
+        "confidence": 0.0,
+        "pronunciation_sources": []
+      },
+      {
+        "kind": "match",
+        "shape": "1:1",
+        "asr_range": [
+          294,
+          295
+        ],
+        "lyric_range": [
+          297,
+          298
+        ],
+        "asr_tokens": [
+          "you're"
+        ],
+        "lyric_tokens": [
+          "you're"
+        ],
+        "cost": 0.0,
+        "text_cost": 0.0,
+        "phoneme_cost": null,
+        "confidence": 1.0,
+        "pronunciation_sources": []
+      },
+      {
+        "kind": "match",
+        "shape": "1:1",
+        "asr_range": [
+          295,
+          296
+        ],
+        "lyric_range": [
+          298,
+          299
+        ],
+        "asr_tokens": [
+          "not"
+        ],
+        "lyric_tokens": [
+          "not"
+        ],
+        "cost": 0.0,
+        "text_cost": 0.0,
+        "phoneme_cost": null,
+        "confidence": 1.0,
+        "pronunciation_sources": []
+      },
+      {
+        "kind": "match",
+        "shape": "1:1",
+        "asr_range": [
+          296,
+          297
+        ],
+        "lyric_range": [
+          299,
+          300
+        ],
+        "asr_tokens": [
+          "missing"
+        ],
+        "lyric_tokens": [
+          "missing"
+        ],
+        "cost": 0.0,
+        "text_cost": 0.0,
+        "phoneme_cost": null,
+        "confidence": 1.0,
+        "pronunciation_sources": []
+      }
+    ]
+  }
+]
