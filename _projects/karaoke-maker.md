@@ -57,9 +57,8 @@ On a separate frozen set of five manually timed local projects, the rank-8 model
 ## Word Projection Changes: Singing Energy
 
 ![Measured vocal energy for the line-final word take in Not Much to Miss, comparing the shorter standard CTC projection with the longer singing-energy projection.](/assets/images/karaoke-maker/singing-energy.png)
-_Line-final “take” at 0:39.224 in “Not Much to Miss,” measured from the separated vocal stem using the same rank-8 model output for both projections. Standard CTC ends at 0:40.886 (1.662 seconds); the singing projection follows the remaining vocal energy to 0:41.187 (1.963 seconds), an extension of about 300 ms. The longer endpoint agrees with the saved editor timing._
+_Line-final “take” at 0:39.224 in “Not Much to Miss,” measured from the separated vocal stem using the same rank-8 model output for both projections. Standard CTC ends at 0:40.886 (1.662 seconds); the singing projection follows the remaining vocal energy to 0:41.187 (1.963 seconds), an extension of about 300 ms._
 
-[View the full-size singing-energy breakdown](/assets/images/karaoke-maker/singing-energy.png).
 
 CTC character emissions can finish before a sustained vowel does. If I use the last emitted character as the end of the word, the karaoke highlight can disappear while the singer is still holding the note. The singing projection keeps the CTC starts and extends the ends using the separated vocal signal:
 
@@ -74,8 +73,6 @@ The rule is deliberately constrained: it cannot cross the next word's onset. It 
 
 ![The actual Karaoke Maker desktop editor showing Not Much to Miss, with word settings on the left, a live preview on the right, and timed word blocks beneath a waveform.](/assets/images/karaoke-maker/editor.png)
 _The desktop application with “Not Much to Miss” loaded. The preview, selected word, waveform, and timing blocks all refer to the same playhead._
-
-[View the full-size editor screenshot](/assets/images/karaoke-maker/editor.png).
 
 I built this GUI with React, TypeScript, and Tauri, while keeping the audio and machine-learning pipeline in Python. Playback uses a persistent Web Audio context and a decoded audio buffer so checking a tiny timing adjustment does not incur a fresh audio-startup delay.
 
