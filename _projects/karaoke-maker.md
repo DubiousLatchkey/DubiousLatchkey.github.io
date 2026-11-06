@@ -35,15 +35,11 @@ _1:05–1:10 in “Not Much to Miss”: the matcher maps ASR “yes” to the su
 ![Real final-chorus alignment from Not Much to Miss, showing a two-to-two block and an unmatched lyric word.](/assets/images/karaoke-maker/matching-final-chorus.png)
 _3:08–3:13: the saved path contains a 2:2 block mapping “now yes” to “enough I,” followed by an unmatched “guess.” This low-confidence result shows where acoustic refinement and manual review are still needed._
 
-These excerpts come from the saved ASR words and matching diagnostics. Replaying the full song with its recorded configuration reproduces all 312 operations, including their costs and token ranges. Teal marks 1:1 matches, gold marks grouped matches, and red marks gaps. These are coarse text-matcher decisions, before acoustic refinement or manual timing edits.
-
-A one-word-at-a-time matcher struggles when ASR splits a word, merges several words, or hears an extra “oh.” I use dynamic programming over both token sequences, with transitions that can consume up to **three ASR tokens and two lyric tokens** at once.
-
-Each candidate block compares normalized text both with and without spaces using normalized Levenshtein distance. Compact comparison adds a small word-count penalty, and larger blocks pay an additional complexity cost. Affine gap costs make a run of missing words cheaper than repeatedly opening separate gaps. Recognized non-lexical vocalizations have a separate, lower gap cost, but still match normally when they appear in the supplied lyrics.  I tried a some more phoneme based approaches, but they were much more expensive and didn't improve things.
+ASR is aggresively mediocre at catching words in songs.  Often, a singer will sing something and the speech recognition will divide it into two words.  Or, some will just get dropped entirely if the borders aren't clear which is pretty common in singing.  Here are some examples of how the many to many matching scores incorrect words via Levenshtein distance to try and account for these situations.  I tried some phoneme based methods, but they were much more computationally expensive and didn't really improve things.
 
 An important restriction is **irreducibility**: a larger block containing an exact token pair is rejected. The outer dynamic program must emit that exact pair separately, so an easy match cannot hide unrelated neighboring words inside an oversized block. After backtracking, the chosen operations project coarse ASR times onto the lyric words; the acoustic refiner then works on the resulting line windows.
 
-## Training a CTC aligner for singing
+## Training a CTC Aligner for Singing
 
 ![Architecture of the production singing aligner: 16 kHz vocals, seven convolutional layers, a twelve-layer transformer with rank-eight LoRA on query and value projections, a CTC head, constrained alignment, and singing-energy word projection.](/assets/images/karaoke-maker/ctc-architecture.png)
 _The production `singing_r8` release. Gold identifies trained components; the pretrained backbone is frozen._
@@ -58,7 +54,7 @@ I trained on **724 English JamendoLyrics line clips**, with **144 validation cli
 
 On a separate frozen set of five manually timed local projects, the rank-8 model with the singing projection achieved **78.73 ms mean absolute boundary error** across 1,994 alignable words. That test supplied the correct lyric lines and manually derived line windows; it measures line-conditioned alignment, not end-to-end automatic transcription accuracy. Larger boundary-supervised adapters were also tested, but the small rank-8 release remains the production default.
 
-## Singing energy: keep the highlight through the vowel
+## Word Projection Changes: Singing Energy
 
 ![Illustrative vocal-energy trace showing a CTC lexical endpoint extended through sustained energy until two consecutive quiet frames, bounded by the next word.](/assets/images/karaoke-maker/singing-energy.png)
 _A synthetic trace illustrating the implemented rule. The shaded region is the sustained sound retained after the lexical CTC endpoint._
@@ -81,9 +77,9 @@ _The desktop application with “Not Much to Miss” loaded. The preview, select
 
 [View the full-size editor screenshot](/assets/images/karaoke-maker/editor.png).
 
-I rebuilt the GUI with React, TypeScript, and Tauri, while keeping the audio and machine-learning pipeline in Python. Playback uses a persistent Web Audio context and a decoded audio buffer so checking a tiny timing adjustment does not incur a fresh audio-startup delay.
+I built this GUI with React, TypeScript, and Tauri, while keeping the audio and machine-learning pipeline in Python. Playback uses a persistent Web Audio context and a decoded audio buffer so checking a tiny timing adjustment does not incur a fresh audio-startup delay.
 
-The editor has a live 16:9 preview, draggable word boundaries, group selection, undo/redo, lyric editing and validation, and A/B timing comparisons. Overlapping singers can be assigned separate lyric layers manually. The automated pipeline stays single-layer; the editor is where I handle those more complicated cases.
+The editor has a live 16:9 preview (though it's pretty limited), draggable word boundaries, group selection, undo/redo, and lyric editing. Overlapping singers can be assigned separate lyric layers manually since this can't be done automatically (yet!). The automated pipeline stays single-layer; the editor is where I handle those more complicated cases.
 
 
 ## Example video
